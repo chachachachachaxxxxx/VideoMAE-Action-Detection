@@ -1,5 +1,5 @@
 import os
-from transforms import *
+# from transforms import *
 from data.ava import AVAVideoDataset
 from data.transforms import TransformsCfg
 import alphaction.config.paths_catalog as paths_catalog

@@ -176,7 +176,8 @@ def main(args, ds_init):
     np.random.seed(seed)
 
     cudnn.benchmark = True
-
+    
+    print("build_transforms")
     transform_train = build_transforms(is_train=True)
     dataset_train = build_ava_dataset(is_train=True, transforms=transform_train)
 
@@ -390,6 +391,7 @@ def main(args, ds_init):
         optimizer=optimizer, loss_scaler=loss_scaler, model_ema=model_ema)
 
     if args.eval:
+        print("start evaluation")
         validation_one_epoch(data_loader_val, model, device, args.output_dir, args.start_epoch, log_writer)
         exit(0)
 

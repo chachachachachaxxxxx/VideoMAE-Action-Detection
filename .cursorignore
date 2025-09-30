@@ -1,0 +1,100 @@
+# 忽略大型数据与生成文件，避免占用上下文
+
+# ---- Datasets / Large Data ----
+data/
+datasets/
+annotations/
+data/AVA/
+data/Kinetics/
+data/K400/
+data/SSv2/
+
+# ---- Model weights / checkpoints ----
+checkpoints/
+ckpt/
+weights/
+pretrained/
+snapshots/
+*.pth
+*.pt
+*.ckpt
+*.onnx
+
+# ---- Logs / experiment outputs ----
+logs/
+log/
+runs/
+tb_logs/
+tensorboard/
+wandb/
+mlruns/
+output/
+outputs/
+results/
+exp/
+experiments/
+work_dirs/
+*.log
+*.out
+*.err
+slurm-*.out
+
+# ---- Python / caches ----
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+
+# ---- Build / Packaging ----
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ---- Virtual Envs / Envs ----
+.venv/
+venv/
+env/
+.conda/
+.env
+.env.local
+.env.*.local
+
+# ---- OS / Editor ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.history/
+
+# ---- Media / Archives / Large binaries ----
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.tif
+*.tiff
+*.gif
+*.svg
+*.pdf
+*.zip
+*.tar
+*.gz
+*.rar
+*.7z
+*.xz
+
+# ---- Arrays / Tables (often large) ----
+*.npy
+*.npz
+*.csv
+*.tsv

@@ -1,0 +1,59 @@
+## 单卡 AVA 训练示例配置（命令行参数可覆写本配置项）
+
+# 基础
+device: cuda
+seed: 0
+data_set: ava
+
+# 训练
+batch_size: 8
+epochs: 30
+update_freq: 1
+save_ckpt: true
+save_ckpt_freq: 10
+val_freq: 2
+
+# 模型
+model: vit_base_patch16_224
+tubelet_size: 2
+input_size: 224
+drop: 0.0
+attn_drop_rate: 0.0
+drop_path: 0.1
+use_checkpoint: false
+use_mean_pooling: true
+init_scale: 0.001
+nb_classes: 80
+num_segments: 1
+num_frames: 16
+sampling_rate: 4
+
+# 优化器/调度
+opt: adamw
+opt_eps: 1.0e-8
+weight_decay: 0.05
+weight_decay_end: null
+momentum: 0.9
+lr: 0.001
+layer_decay: 0.75
+warmup_lr: 0.000001
+min_lr: 0.000001
+warmup_epochs: 5
+warmup_steps: -1
+clip_grad: null
+
+# 数据与日志（建议在命令行指定实际输出目录）
+num_workers: 10
+pin_mem: true
+output_dir: temp/outputs
+log_dir: temp/tb
+
+# 预训练/恢复
+finetune: ''
+model_key: 'model|module'
+model_prefix: ''
+resume: ''
+auto_resume: true
+
+
+

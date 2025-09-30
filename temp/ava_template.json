@@ -1,0 +1,61 @@
+{
+    "categories": [
+        {
+            "supercategory": "person",
+            "id": 1,
+            "name": "person"
+        }
+    ],
+    "annotations": [
+        {
+            "id": 180902001,
+            "image_id": 180902,
+            "category_id": 1,
+            "action_ids": [
+                12,
+                79
+            ],
+            "person_id": 1,
+            "bbox": [
+                0.9,
+                42.48,
+                320.4,
+                309.24
+            ],
+            "area": 99080.496,
+            "keypoints": [],
+            "iscrowd": 0
+        },
+        {
+            "id": 180902000,
+            "image_id": 180902,
+            "category_id": 1,
+            "action_ids": [
+                12,
+                17,
+                79
+            ],
+            "person_id": 0,
+            "bbox": [
+                199.8,
+                19.44,
+                246.6,
+                336.96
+            ],
+            "area": 83094.336,
+            "keypoints": [],
+            "iscrowd": 0
+        }
+    ],
+    "images": [   
+        {
+            "id": 180902,
+            "img_path": "1j20qq1JyX4/902.jpg",
+            "video_path": "1j20qq1JyX4/902.mp4",
+            "height": 360,
+            "width": 450,
+            "movie": "1j20qq1JyX4",
+            "timestamp": 902
+        }
+    ]
+}
